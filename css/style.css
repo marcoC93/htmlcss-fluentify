@@ -134,3 +134,64 @@ ul li a {
     margin-bottom: 15px;
 }
     /* Fine sezione Jumbotron */
+
+    /* Inizio Sezione modalità */
+#modalita {
+
+}
+#modalita::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#laptop-img {
+    width: 50%;
+    float: left;
+}
+#advantages {
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+    /* background-color: red; */
+}
+#advantages h2 {
+    margin-bottom: 30px;
+    color: #727272;
+}
+#advantages h3 {
+    margin-bottom: 20px;
+}
+#advantages p {
+    line-height: 1.5;
+    text-align: justify;
+    color: #727272;
+}
+#advantages hr {
+    margin: 20px 0 ;
+    color: #727272;
+}
+.green-text {
+    color: #64DE82;
+}
+    /* Fine sezione "modalità"  */
+
+    /* Inizio sezione "requirements" */
+#requirements
+{
+    margin-top: 30px;
+    color: #727272 ;
+}
+.box {
+    float: left;
+    width: 30%;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+}
+#requirements h2 {
+    text-align: center;
+}
+#requirements img {
+
+    
+}
