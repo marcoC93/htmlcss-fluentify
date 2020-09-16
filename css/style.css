@@ -4,31 +4,57 @@
     box-sizing: border-box;
 }
 body {
-
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 18px;
 }
 .container {
     width: 80%;
     margin: auto;
-    background: green;
+}
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
 
 }
 header {
     width: 100%;
     height: 500px;
-    background: red;
+    background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fwww.fluentify.com%2Fhome%2Fwp-content%2Fuploads%2F2020%2F01%2Ffluentify-cover-privati-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+header::after {
 
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, right top, left top, from(transparent), to(#001A4F));
+	background: linear-gradient(270deg, transparent 0%, #001A4F 100%);
 }
 nav {
     width: 100%;
     height: 100px;
-    background: pink;
+
     position: relative;
     z-index: 2;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
 }
 ul {
     list-style-type: none;
     display: inline-block;
     margin-left: 20px;
+    padding: 10px;
+    vertical-align: bottom;
+
 }
 ul li {
     display: inline-block;
@@ -47,6 +73,7 @@ ul li a {
     border: 1px solid #64DE82;
     color: #337142;
     text-decoration: none;
+    padding: 10px;
 
 }
 
@@ -54,20 +81,41 @@ ul li a {
             /* Inizio Navbar */
 #main-menu {
     float: left;
-    width: 60%;
+    width: 65%;
     height: 100px;
     padding-top: 25px;
     }
 #menu-buttons {
     float: left;
-    width: 40%;
+    width: 35%;
     height: 100px;
     padding-top: 25px;
-    background: purple;
+
     text-align: right;
 }
 #menu-buttons a {
-        padding-right: 20px;
-    height: 50%;
+    margin-right: 10px;
+}
+#menu-buttons a:last-child {
+    color: white;
+    text-decoration: none;
 
+}
+    /* Fine menu header */
+    /* Inizio menu Jumbotron */
+#jumbotron {
+    position: relative;
+    z-index: 2;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: white;
+}
+#jumbotron-content h4{
+    margin-bottom: 10px;
+}
+#jumbotron h1 {
+    margin-bottom: 20px;
+}
+#jumbotron p {
+    margin-bottom: 15px;
 }
