@@ -207,7 +207,7 @@ footer::after {
     clear: both;
 }
 footer .footer-sx {
-
+    padding-top: 30px;
     width: 20%;
     height: 100%;
     float: left;
@@ -216,7 +216,7 @@ footer .footer-sx {
 footer p {
     color: white;
     line-height: 1.5;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #social-logo {
